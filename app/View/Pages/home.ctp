@@ -1,1 +1,1 @@
-<h1>Bla bla'...</h1>
+<h1>página inicial</h1>
