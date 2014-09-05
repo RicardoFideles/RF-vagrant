@@ -36,11 +36,6 @@ class AppController extends Controller {
 
 	use CrudControllerTrait;
 
-/**
- * List of global controller components
- *
- * @var array
- */
 	public $components = [
 		'RequestHandler',
 		'Session',
