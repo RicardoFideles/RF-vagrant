@@ -24,13 +24,10 @@
     },
     "extra": {
         "heroku": {
+            "compile": "app/Console/cake Migrations.migration run all",
             "framework": "cakephp2",
             "document-root": "webroot",
-            "index-document": "index.php",
-            "compile": [
-            	"app/Console/cake Migrations.migration run all"
-            	
-            ]
+            "index-document": "index.php"
         }
     }
 }
