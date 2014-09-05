@@ -36,6 +36,11 @@ class AppController extends Controller {
 
 	use CrudControllerTrait;
 
+/**
+ * List of global controller components
+ *
+ * @var array
+ */
 	public $components = [
 		'RequestHandler',
 		'Session',
@@ -48,4 +53,9 @@ class AppController extends Controller {
 		],
 		'Paginator' => ['settings' => ['paramType' => 'querystring', 'limit' => 30]]
 	];
+	
+	public function beforeFilter() {
+        $this->layout = 'bootstrap';
+		
+	}
 }
