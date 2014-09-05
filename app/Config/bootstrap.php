@@ -78,6 +78,8 @@ App::build(
  */
 CakePlugin::load('Crud');
 
+CakePlugin::load('Migrations');
+
 if (php_sapi_name() !== 'cli' && Configure::read('debug') && in_array('DebugKit', App::objects('plugin'))) {
 	CakePlugin::load('DebugKit');
 	App::uses('CakeEventManager', 'Event');
