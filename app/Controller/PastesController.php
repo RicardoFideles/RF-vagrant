@@ -16,5 +16,4 @@ class PastesController extends AppController {
 	public function beforeRender () {
 		$this->layout = 'bootstrap';
 	}
-		
-}	
+}
